@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 全体のcss */
+body {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+/* ヘッダーのcss */
+
+header {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.nav-menu li {
+    padding: 0 16px;
+    list-style: none;
+}
+
+/* メインのcss */
+.about-content, .like-content {
+    padding: 20px 4%;
+}
+.about-img img {
+    border-radius: 135px;
+}
+.about-list ul li {
+    
+}
+/* フッターのcss */
+
+/* 画面横幅が768px以上のときのCSS */
+
+@media(min-width: 768px) { 
+    .nav-menu {
+        display: flex;
+    }
+    .about-flex, .like-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+    .like-box {
+        width: calc(100/4);
+        padding: 0 16px;
+    }
+
+    
+}
